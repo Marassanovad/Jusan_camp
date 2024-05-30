@@ -1,39 +1,294 @@
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(./font/Gilroy-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(./font/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: "Gilroy-Semibold";
+    src: url(./font/Gilroy-Semibold.woff2);
+}
+
 * {
     padding: 0;
     margin: 0;
 }
+.title {
+    color: #263da4;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Gilroy-Bold";
+}
+
+.text {
+    color: #666;
+    font-family: "Gilroy-Regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 img {
     max-width: 100%;
     display: block;  
 }
 header{
-    background-color: rgb(66, 123, 255);
+    background-color: #263da4;
     height: 70px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: end;
     padding-left: 100px;
     align-items: center;
 }
 .logo{
     width: 50px;
+    padding-right: 100px;
 }
 main{
     /* background-image: url("mirana.jpg"); */
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-footer{
-    background-color: rgb(66, 123, 255);
-    height: 300px;
+.about{
+    background-image: linear-gradient(to right, #171c22, #111518);
+    /* color: #000; */
     display: flex;
-    justify-content: center;
-
+    justify-content: end;
 }
-.footer_menu{
+
+.content{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    text-align: center;
+    max-width: 350px;
+    /* padding-left: 400px; */
     gap: 10px;
+}
+
+
+
+.title_about{
+    color: #85807a;
+}
+
+
+.team{
+    margin-top: 93px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center; 
+    gap: 30px;
+}
+.team_title{
+    justify-content: center;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 52px;
+    max-height: 128px;
+}
+
+.team_text{
+    /* color: #8496ce; */
+    max-width: 461px;
+    max-height: 48px;
+}
+.person{
+    border: 1px solid #EEE;
+    max-height: 331px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+}
+.person:hover{
+    background: #FFF;
+    box-shadow: 15px 20px 50px 0px rgba(0, 0, 0, 0.10);
+    .person_name{
+        color: #8496ce
+    }
+}
+.person_img{
+    padding-bottom: 14px;
+}
+.author_name{
+    text-align: center;
+}
+.person_name{
+    color: #263da4;
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* .person_name:hover{
+    color: #F25822;
+} */
+/* .name_orange{
+    color: #F25822;
+} */
+
+.person_text{
+    color: #888;
+    font-family: "Gilroy-Medium";
+    font-size: 13px;
+    line-height: 19.5px;
+}
+
+
+.person_button {
+    background: none;
+    color: #FFF;
+    padding: 15px 35px;
+    display: flex;
+    gap: 27px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Gilroy-Medium";
+    align-items: center;
+    text-align: center;
+}
+
+.person_button:hover {
+    font-size: 18px;
+    .text{
+        color: #8496ce;
+    }
+}
+
+
+.button_text {
+    text-decoration: none;
+}
+
+.details_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: #FAFAFA;
+}
+
+.details_content{
+    padding-top: 127px;
+    padding-bottom: 124px;
+    margin-left: 30px;
+}
+
+.details_tittle {
+    padding-bottom: 20px;
+    font-size: 45px;
+    max-width: 409px;
+    justify-content: flex-start;
+    color: #263da4;;
+}
+
+.details_text {
+    max-width: 515px;
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #8496ce;; */
+}
+.details_photo {
+    width: 200px;
+    padding: 50px;
+}
+
+
+.copyright_content{
+    background-color: #263da4;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 655px;
+}
+.copyright{
+    color: #FBFBFB;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 7.3px;
+}
+.socila_media_link{
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socila_media_link:hover  {
+    background-color: #8496ce;
+}
+.socila_media_link:hover path {
+    fill: white;
+}
+
+@media (max-width: 425px){
+    .image{
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        justify-content: center;
+    }
+
+    .about {
+        justify-content: center;
+    }
+
+    .content{
+        padding: 40px 0;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .team {
+        grid-template-columns: 350px;
+    }
+
+    .team_title {
+        grid-column: span 1;
+    }
+
+    .person {
+        padding-bottom: 70px;
+    }
+    
+    .details_photo{
+        display: none;
+    }
+    
+    .copyright_content {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
