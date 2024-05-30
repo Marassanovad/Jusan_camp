@@ -151,7 +151,7 @@ main{
 
 .person_button {
     background: none;
-    color: #FFF;
+    color: #263da4;
     padding: 15px 35px;
     display: flex;
     gap: 27px;
@@ -201,11 +201,20 @@ main{
     max-width: 515px;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 20px;
     /* color: #8496ce;; */
 }
 .details_photo {
     width: 200px;
     padding: 50px;
+}
+.project {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.project .person_button {
+    padding: 0;
 }
 
 
